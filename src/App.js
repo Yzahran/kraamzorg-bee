@@ -3,6 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Header from './components/Header';
+import WhatsAppFloat from './components/WhatsAppFloat';
 
 import Home from './pages/Home';
 import OverOns from './pages/OverOns';
@@ -29,8 +30,9 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
+      
       <Footer />
-
+      <WhatsAppFloat />
     </Router>
   );
 }

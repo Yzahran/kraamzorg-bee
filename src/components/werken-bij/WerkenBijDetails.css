@@ -175,20 +175,22 @@
 }
 
 .detail-icon {
-  background: linear-gradient(135deg, #4e3b31 0%, #6b4e3d 100%);
-  width: 40px;
-  height: 40px;
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(135deg, #4e3b31 0%, #6b5347 100%);
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-shrink: 0;
-  box-shadow: 0 3px 10px rgba(78, 59, 49, 0.3);
+  margin-top: 0.7rem;
+  transition: all 0.3s ease;
 }
 
-.heart-icon {
-  color: #ffffff;
-  font-size: 1.2rem;
+.detail-item:hover .detail-icon {
+  background: linear-gradient(135deg, #6b5347 0%, #8a6b5d 100%);
+  transform: scale(1.2);
+}
+
+.detail-dot {
+  display: none;
 }
 
 .detail-content {
@@ -375,8 +377,9 @@
     height: 35px;
   }
   
-  .heart-icon {
-    font-size: 1rem;
+  .detail-dot {
+    width: 10px;
+    height: 10px;
   }
   
   .detail-content span {

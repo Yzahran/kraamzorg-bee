@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./WerkenBijContact.css";
+import { sendInterestEmail } from "../../services/emailService";
 
 const WerkenBijContact = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +11,10 @@ const WerkenBijContact = () => {
     bericht: ''
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState('');
+  const [submitStatus, setSubmitStatus] = useState(''); // 'success' or 'error'
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -17,11 +22,36 @@ const WerkenBijContact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    // You can add actual form submission logic here
+    setIsSubmitting(true);
+    setSubmitMessage('');
+    setSubmitStatus('');
+
+    try {
+      const result = await sendInterestEmail(formData);
+      
+      if (result.success) {
+        setSubmitStatus('success');
+        setSubmitMessage(result.message);
+        // Reset form na succesvol verzenden
+        setFormData({
+          voornaam: '',
+          achternaam: '',
+          email: '',
+          telefoon: '',
+          bericht: ''
+        });
+      } else {
+        setSubmitStatus('error');
+        setSubmitMessage(result.message);
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+      setSubmitMessage('Er is een onverwachte fout opgetreden. Probeer het later opnieuw.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -41,6 +71,12 @@ const WerkenBijContact = () => {
           </div>
 
           <form className="contact-form" onSubmit={handleSubmit}>
+            {submitMessage && (
+              <div className={`submit-message ${submitStatus}`}>
+                {submitMessage}
+              </div>
+            )}
+            
             <div className="form-row">
               <div className="form-group">
                 <label htmlFor="voornaam">Voornaam</label>
@@ -51,6 +87,7 @@ const WerkenBijContact = () => {
                   value={formData.voornaam}
                   onChange={handleChange}
                   required
+                  disabled={isSubmitting}
                 />
               </div>
               <div className="form-group">
@@ -61,6 +98,7 @@ const WerkenBijContact = () => {
                   name="achternaam"
                   value={formData.achternaam}
                   onChange={handleChange}
+                  disabled={isSubmitting}
                 />
               </div>
             </div>
@@ -75,6 +113,7 @@ const WerkenBijContact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
+                  disabled={isSubmitting}
                 />
               </div>
               <div className="form-group">
@@ -86,23 +125,26 @@ const WerkenBijContact = () => {
                   value={formData.telefoon}
                   onChange={handleChange}
                   required
+                  disabled={isSubmitting}
                 />
               </div>
             </div>
 
             <div className="form-group full-width">
-              <label htmlFor="bericht">Bericht</label>
+              <label htmlFor="bericht">Motivatie</label>
               <textarea
                 id="bericht"
                 name="bericht"
                 value={formData.bericht}
                 onChange={handleChange}
                 rows="5"
+                disabled={isSubmitting}
+                placeholder="Vertel ons waarom je bij Kraamzorg Bee wilt werken..."
               ></textarea>
             </div>
 
-            <button type="submit" className="submit-button">
-              Verzenden
+            <button type="submit" className="submit-button" disabled={isSubmitting}>
+              {isSubmitting ? 'Verzenden...' : 'Interesse Versturen'}
             </button>
           </form>
         </div>

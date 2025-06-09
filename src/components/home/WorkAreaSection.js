@@ -16,26 +16,26 @@ const WorkAreaSection = () => {
 
           <div className="workarea-columns">
             <ul>
-              <li>♥ Leidschendam</li>
-              <li>♥ Voorburg</li>
-              <li>♥ Den Haag</li>
-              <li>♥ Rijswijk</li>
-              <li>♥ Delft</li>
-              <li>♥ Zoetermeer</li>
-              <li>♥ Wassenaar</li>
-              <li>♥ Voorschoten</li>
-              <li>♥ Pijnacker</li>
+              <li><span className="location-dot"></span>Leidschendam</li>
+              <li><span className="location-dot"></span>Voorburg</li>
+              <li><span className="location-dot"></span>Den Haag</li>
+              <li><span className="location-dot"></span>Rijswijk</li>
+              <li><span className="location-dot"></span>Delft</li>
+              <li><span className="location-dot"></span>Zoetermeer</li>
+              <li><span className="location-dot"></span>Wassenaar</li>
+              <li><span className="location-dot"></span>Voorschoten</li>
+              <li><span className="location-dot"></span>Pijnacker</li>
             </ul>
             <ul>
-              <li>♥ Nootdorp</li>
-              <li>♥ Rotterdam</li>
-              <li>♥ Schiedam</li>
-              <li>♥ Vlaardingen</li>
-              <li>♥ Maassluis</li>
-              <li>♥ Westland (Naaldwijk, Monster, 's-Gravenzande, De Lier)</li>
-              <li>♥ Leiden</li>
-              <li>♥ Leiderdorp</li>
-              <li>♥ Oegstgeest</li>
+              <li><span className="location-dot"></span>Nootdorp</li>
+              <li><span className="location-dot"></span>Rotterdam</li>
+              <li><span className="location-dot"></span>Schiedam</li>
+              <li><span className="location-dot"></span>Vlaardingen</li>
+              <li><span className="location-dot"></span>Maassluis</li>
+              <li><span className="location-dot"></span>Westland (Naaldwijk, Monster, 's-Gravenzande, De Lier)</li>
+              <li><span className="location-dot"></span>Leiden</li>
+              <li><span className="location-dot"></span>Leiderdorp</li>
+              <li><span className="location-dot"></span>Oegstgeest</li>
             </ul>
           </div>
 

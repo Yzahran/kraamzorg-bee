@@ -48,7 +48,7 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div key={index} className={`service-card service-card-${index + 1}`}>
               <div className="service-icon">
-                <span>{service.icon}</span>
+                {service.icon}
               </div>
               <div className="service-content">
                 <h3>{service.title}</h3>

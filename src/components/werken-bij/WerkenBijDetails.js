@@ -9,7 +9,7 @@ const WerkenBijDetails = () => {
         {/* Section Header */}
         <div className="details-header">
           <div className="details-badge">
-            <span>💼 Waarom Kraamzorg Bee?</span>
+            <span>Waarom Kraamzorg Bee?</span>
           </div>
           <h2 className="details-main-title">
             Samen maken we van elke kraamtijd een warme en onvergetelijke ervaring
@@ -26,7 +26,7 @@ const WerkenBijDetails = () => {
             <div className="details-list">
               <div className="detail-item">
                 <div className="detail-icon">
-                  <span className="heart-icon">♥</span>
+                  <span className="detail-dot"></span>
                 </div>
                 <div className="detail-content">
                   <span>Een kleinschalig, hecht team waar persoonlijke aandacht centraal staat</span>
@@ -34,7 +34,7 @@ const WerkenBijDetails = () => {
               </div>
               <div className="detail-item">
                 <div className="detail-icon">
-                  <span className="heart-icon">♥</span>
+                  <span className="detail-dot"></span>
                 </div>
                 <div className="detail-content">
                   <span>Ruimte voor jouw eigen inbreng en ontwikkeling</span>
@@ -42,7 +42,7 @@ const WerkenBijDetails = () => {
               </div>
               <div className="detail-item">
                 <div className="detail-icon">
-                  <span className="heart-icon">♥</span>
+                  <span className="detail-dot"></span>
                 </div>
                 <div className="detail-content">
                   <span>Flexibele uren en diensten in jouw regio</span>
@@ -50,7 +50,7 @@ const WerkenBijDetails = () => {
               </div>
               <div className="detail-item">
                 <div className="detail-icon">
-                  <span className="heart-icon">♥</span>
+                  <span className="detail-dot"></span>
                 </div>
                 <div className="detail-content">
                   <span>Ondersteuning vanuit een organisatie die écht luistert naar haar medewerkers</span>
@@ -66,7 +66,7 @@ const WerkenBijDetails = () => {
             <div className="details-list">
               <div className="detail-item">
                 <div className="detail-icon">
-                  <span className="heart-icon">♥</span>
+                  <span className="detail-dot"></span>
                 </div>
                 <div className="detail-content">
                   <span>Gediplomeerde kraamverzorgenden of studenten in opleiding</span>
@@ -74,7 +74,7 @@ const WerkenBijDetails = () => {
               </div>
               <div className="detail-item">
                 <div className="detail-icon">
-                  <span className="heart-icon">♥</span>
+                  <span className="detail-dot"></span>
                 </div>
                 <div className="detail-content">
                   <span>Een warm hart voor gezinnen</span>
@@ -82,7 +82,7 @@ const WerkenBijDetails = () => {
               </div>
               <div className="detail-item">
                 <div className="detail-icon">
-                  <span className="heart-icon">♥</span>
+                  <span className="detail-dot"></span>
                 </div>
                 <div className="detail-content">
                   <span>Betrokken, flexibel en zelfstandig</span>
@@ -90,7 +90,7 @@ const WerkenBijDetails = () => {
               </div>
               <div className="detail-item">
                 <div className="detail-icon">
-                  <span className="heart-icon">♥</span>
+                  <span className="detail-dot"></span>
                 </div>
                 <div className="detail-content">
                   <span>Bekend met de regio Zuid-Holland of bereid hier te werken</span>

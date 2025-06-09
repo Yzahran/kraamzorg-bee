@@ -74,7 +74,7 @@
 /* Services Grid */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   margin-bottom: 60px;
 }
@@ -132,21 +132,12 @@
   margin-bottom: 25px;
   border: 2px solid rgba(78, 59, 49, 0.1);
   transition: all 0.3s ease;
+  font-size: 2rem;
 }
 
 .service-card:hover .service-icon {
   background: linear-gradient(135deg, #4e3b31 0%, #6b5347 100%);
   border-color: #4e3b31;
-  transform: scale(1.1);
-}
-
-.service-icon span {
-  font-size: 2rem;
-  transition: all 0.3s ease;
-}
-
-.service-card:hover .service-icon span {
-  filter: brightness(0) invert(1);
   transform: scale(1.1);
 }
 
@@ -347,10 +338,6 @@
     width: 60px;
     height: 60px;
     margin-bottom: 20px;
-  }
-  
-  .service-icon span {
-    font-size: 1.8rem;
   }
   
   .service-card h3 {

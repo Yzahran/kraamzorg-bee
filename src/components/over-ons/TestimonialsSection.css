@@ -16,11 +16,12 @@
     flex: 1 1 45%;
     font-family: 'Comme', sans-serif;
     color: #3f3026;
+    min-width: 300px;
   }
   
   /* Naam en subtitel blok */
   .name-block {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
   
   .testimonial h3 {
@@ -29,6 +30,7 @@
     font-weight: normal;
     margin: 0;
     display: block;
+    line-height: 1.2;
   }
   
   .testimonial .subtitle {
@@ -36,15 +38,17 @@
     font-family: 'Comme', sans-serif;
     font-weight: 600;
     color: #4e3b31;
-    font-size: 1rem;
-    margin-top: 0.4rem;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
     display: block;
+    line-height: 1.4;
   }
   
   .testimonial p {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 1.1rem;
+    line-height: 1.7;
     margin-bottom: 1.5rem;
+    text-align: justify;
   }
   
   .socials {
@@ -63,14 +67,54 @@
     color: #fbbf24;
   }
   
-  /* Responsive */
+  /* Tablet responsive */
+  @media (max-width: 1024px) {
+    .testimonials-section {
+      padding: 3rem 1.5rem;
+    }
+    
+    .testimonials-container {
+      gap: 3rem;
+    }
+    
+    .testimonial {
+      flex: 1 1 100%;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .testimonial h3 {
+      font-size: 2rem;
+    }
+    
+    .testimonial .subtitle {
+      font-size: 1.05rem;
+    }
+    
+    .testimonial p {
+      font-size: 1.05rem;
+    }
+  }
+  
+  /* Mobile responsive */
   @media (max-width: 768px) {
+    .testimonials-section {
+      padding: 2.5rem 1rem;
+    }
+    
     .testimonials-container {
       flex-direction: column;
+      gap: 2.5rem;
     }
   
     .testimonial {
       flex: 1 1 100%;
+      min-width: unset;
+      text-align: center;
+    }
+    
+    .name-block {
+      margin-bottom: 1.2rem;
     }
   
     .socials {
@@ -82,7 +126,40 @@
     }
   
     .testimonial .subtitle {
+      font-size: 1rem;
+    }
+    
+    .testimonial p {
+      font-size: 1rem;
+      text-align: left;
+    }
+  }
+  
+  /* Small mobile responsive */
+  @media (max-width: 480px) {
+    .testimonials-section {
+      padding: 2rem 0.75rem;
+    }
+    
+    .testimonials-container {
+      gap: 2rem;
+    }
+    
+    .testimonial h3 {
+      font-size: 1.6rem;
+    }
+    
+    .testimonial .subtitle {
       font-size: 0.95rem;
+    }
+    
+    .testimonial p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    
+    .name-block {
+      margin-bottom: 1rem;
     }
   }
   

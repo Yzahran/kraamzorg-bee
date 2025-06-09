@@ -17,21 +17,6 @@ const TestimonialsSection = () => {
           </p>
           <Link to="/werkgebied" className="yellow-button">Ons werkgebied</Link>
         </div>
-        <div className="right-column">
-          <div className="testimonial-card">
-            <div className="stars">★★★★★</div>
-            <p className="testimonial-text">
-              <em>
-                De kraamtijd is voor ons heel bijzonder geweest, mede dankzij Kraamzorg Bee.
-                Na een pittige bevalling waren we erg kwetsbaar, maar onze kraamverzorgende gaf ons vanaf dag één zoveel rust, steun en vertrouwen.
-                Ze was er niet alleen voor de baby, maar ook voor ons als ouders. Haar betrokkenheid, kennis en liefdevolle zorg maakten echt het verschil.
-                We voelden ons gehoord, geholpen en veilig. Dankzij haar hebben we deze bijzondere periode kunnen afsluiten met een goed gevoel
-                en kijken we vol liefde terug op deze tijd
-              </em>
-            </p>
-            <div className="testimonial-date">12 april 2025</div>
-          </div>
-        </div>
       </div>
     </section>
   );
