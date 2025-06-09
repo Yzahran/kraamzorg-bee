@@ -26,12 +26,6 @@ const TestimonialsSection = () => {
               <p className="subtitle">{t.subtitle}</p>
             </div>
             <p>{t.text}</p>
-            <div className="socials">
-              <FaFacebookF />
-              <FaInstagram />
-              <FaLinkedinIn />
-              <FaWhatsapp />
-            </div>
           </div>
         ))}
       </div>

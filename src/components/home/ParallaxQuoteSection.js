@@ -17,6 +17,7 @@ const ParallaxQuoteSection = () => {
                 </div>
                 
                 <div className="quote-content">
+
                     <blockquote className="quote-text">
                         "De eerste dagen met je baby zijn onvergetelijk. Wij zorgen dat jij kunt genieten, terwijl wij zorgen voor de rest."
                     </blockquote>

@@ -1,5 +1,6 @@
 import React from 'react';
 import './ServicesSection.css';
+import { Link } from 'react-router-dom';
 
 const ServicesSection = () => {
   const services = [
@@ -14,14 +15,14 @@ const ServicesSection = () => {
       icon: "🍼"
     },
     {
-      title: "24/7 bereikbaar bij bevalling",
-      description: "Wij staan dag en nacht klaar om je te ondersteunen bij een thuis bevalling.",
-      icon: "🌙"
-    },
-    {
       title: "Ondersteuning voor het hele gezin",
       description: "Niet alleen voor jou, maar ook aandacht voor eventuele broertjes of zusjes.",
       icon: "👨‍👩‍👧‍👦"
+    },
+    {
+      title: "24/7 bereikbaar bij bevalling",
+      description: "Wij staan dag en nacht klaar om je te ondersteunen bij een thuis bevalling.",
+      icon: "🌙"
     }
   ];
 
@@ -64,9 +65,9 @@ const ServicesSection = () => {
             <h3>Klaar voor persoonlijke kraamzorg?</h3>
             <p>Laten we samen jouw kraamtijd onvergetelijk maken</p>
           </div>
-          <div className="cta-button">
+          <Link to="/contact" className="cta-button">
             <span>Contact opnemen →</span>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

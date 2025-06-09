@@ -1,6 +1,7 @@
 import React from 'react';
 import './HeroSection.css';
 import heroImage from '../../assets/images/hero-bg.webp'; 
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
@@ -16,8 +17,8 @@ const HeroSection = () => {
           Bij Kraamzorg Bee staan we voor je klaar tijdens een van de meest bijzondere periodes in je leven: de kraamtijd. Wij bieden liefdevolle en professionele kraamzorg in regio Zuid-Holland, met als doel jou en je gezin te laten genieten van een ontspannen start.
         </p>
         <div className="hero-buttons">
-          <button className="btn yellow">Over ons</button>
-          <button className="btn brown">Contact</button>
+          <Link to="/over-ons" className="btn yellow">Over ons</Link>
+          <Link to="/contact" className="btn brown">Contact</Link>
         </div>
       </div>
       

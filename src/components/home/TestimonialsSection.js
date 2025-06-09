@@ -1,5 +1,6 @@
 import React from "react";
 import "./TestimonialsSection.css";
+import { Link } from 'react-router-dom';
 
 const TestimonialsSection = () => {
   return (
@@ -14,7 +15,7 @@ const TestimonialsSection = () => {
             Dat zie je terug in de ervaringen van de gezinnen die we hebben mogen begeleiden.
             Zij vertellen hoe onze zorg hen heeft geholpen om vol vertrouwen te genieten van de eerste dagen met hun baby.
           </p>
-          <button className="yellow-button">Ons werkgebied</button>
+          <Link to="/werkgebied" className="yellow-button">Ons werkgebied</Link>
         </div>
         <div className="right-column">
           <div className="testimonial-card">

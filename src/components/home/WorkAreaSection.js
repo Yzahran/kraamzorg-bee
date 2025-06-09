@@ -1,6 +1,7 @@
 import React from "react";
 import "./WorkAreaSection.css";
 import babyImage from "../../assets/images/baby.webp"; // Update path if needed
+import { Link } from 'react-router-dom';
 
 const WorkAreaSection = () => {
   return (
@@ -44,7 +45,7 @@ const WorkAreaSection = () => {
             Bij Kraamzorg Bee denken we in oplossingen en doen we ons best om iedereen te helpen, waar dat kan.
           </p>
 
-          <button className="dark-button">Contact</button>
+          <Link to="/contact" className="dark-button">Contact</Link>
         </div>
 
         <div className="workarea-image">

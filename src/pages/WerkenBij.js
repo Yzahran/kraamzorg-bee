@@ -1,5 +1,5 @@
 import React from 'react';
-import { WerkenBijHero, WerkenBijContent, WerkenBijDetails, WerkenBijContact, WerkenBijContactHero } from '../components/werken-bij';
+import { WerkenBijHero, WerkenBijContent, WerkenBijDetails, WerkenBijContact } from '../components/werken-bij';
 
 const WerkenBij = () => {
   return (
@@ -7,7 +7,6 @@ const WerkenBij = () => {
       <WerkenBijHero />
       <WerkenBijContent />
       <WerkenBijDetails />
-      <WerkenBijContactHero />
       <WerkenBijContact />
     </>
   );

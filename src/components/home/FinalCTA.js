@@ -1,6 +1,8 @@
 import React from "react";
 import "./FinalCTA.css";
 import backgroundImage from "../../assets/images/hero-bg.webp"; // Replace with your baby CTA image
+import { Link } from "react-router-dom";
+
 const FinalCTA = () => {
   return (
     <section
@@ -16,9 +18,9 @@ const FinalCTA = () => {
           een intakegesprek, waarin we jouw wensen en behoeften bespreken. Zo zorgen
           we samen voor een warme en zorgeloze start met je baby.
         </p>
-        <a href="/inschrijven" className="final-cta-button">
+        <Link to="/inschrijven" className="final-cta-button">
           Ik wil me inschrijven!
-        </a>
+        </Link>
       </div>
     </section>
   );

@@ -2,6 +2,7 @@ import React from "react";
 import "./Footer.css";
 import logo from "../assets/images/Logo.webp"; // adjust path
 import { FaInstagram, FaWhatsapp, FaTiktok } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -17,13 +18,13 @@ const Footer = () => {
         <div className="footer-column">
           <h4>Links</h4>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/over-ons">Over ons</a></li>
-            <li><a href="/werkgebied">Werkgebied</a></li>
-            <li><a href="/vergoedingen">Vergoedingen</a></li>
-            <li><a href="/werken-bij">Werken bij</a></li>
-            <li><a href="/inschrijven">Inschrijven</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/over-ons">Over ons</Link></li>
+            <li><Link to="/werkgebied">Werkgebied</Link></li>
+            <li><Link to="/vergoedingen">Vergoedingen</Link></li>
+            <li><Link to="/werken-bij">Werken bij</Link></li>
+            <li><Link to="/inschrijven">Inschrijven</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
 
@@ -37,9 +38,9 @@ const Footer = () => {
         <div className="footer-column">
           <h4>Socials</h4>
           <div className="social-icons">
-            <a href="#"><FaInstagram /></a>
-            <a href="#"><FaWhatsapp /></a>
-            <a href="#"><FaTiktok /></a>
+            <a href="https://instagram.com/kraamzorgbee" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            <a href="https://wa.me/31850048342" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
+            <a href="https://tiktok.com/@kraamzorgbee" target="_blank" rel="noopener noreferrer"><FaTiktok /></a>
           </div>
         </div>
       </div>
