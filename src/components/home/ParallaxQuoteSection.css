@@ -1,0 +1,232 @@
+/* ParallaxQuoteSection.css */
+
+.quote-section {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #f8f6f3 0%, #f0ede8 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.quote-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="%23e8e2db" opacity="0.3"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>') repeat;
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.quote-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Image Section */
+.quote-image-wrapper {
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    transform: rotate(-2deg);
+    transition: transform 0.4s ease;
+}
+
+.quote-image-wrapper:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
+.quote-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.quote-image-wrapper:hover .quote-image {
+    transform: scale(1.05);
+}
+
+.quote-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(78, 59, 49, 0.1) 0%, rgba(107, 83, 71, 0.2) 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.quote-image-wrapper:hover .quote-overlay {
+    opacity: 1;
+}
+
+/* Content Section */
+.quote-content {
+    padding: 40px;
+    position: relative;
+}
+
+.quote-text {
+    font-family: 'Neucha', cursive;
+    font-size: 2.2rem;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #4e3b31;
+    margin: 0 0 40px 0;
+    position: relative;
+    font-style: italic;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.quote-author {
+    display: flex;
+    align-items: center;
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.author-name {
+    font-family: 'Neucha', cursive;
+    font-size: 1.3rem;
+    font-weight: normal;
+    color: #4e3b31;
+}
+
+.author-title {
+    font-family: 'Comme', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #6b5347;
+    opacity: 0.8;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .quote-section {
+        padding: 70px 20px;
+    }
+    
+    .quote-container {
+        gap: 50px;
+    }
+    
+    .quote-text {
+        font-size: 2rem;
+    }
+    
+    .quote-image {
+        height: 450px;
+    }
+}
+
+@media (max-width: 768px) {
+    .quote-section {
+        padding: 60px 20px;
+    }
+    
+    .quote-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .quote-image-wrapper {
+        transform: rotate(0deg);
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .quote-image {
+        height: 350px;
+    }
+    
+    .quote-content {
+        padding: 20px;
+    }
+    
+    .quote-text {
+        font-size: 1.8rem;
+    }
+    
+    .quote-author {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .quote-section {
+        padding: 50px 15px;
+    }
+    
+    .quote-container {
+        gap: 30px;
+    }
+    
+    .quote-image-wrapper {
+        border-radius: 20px;
+    }
+    
+    .quote-image {
+        height: 300px;
+    }
+    
+    .quote-content {
+        padding: 15px;
+    }
+    
+    .quote-text {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+    
+    .author-name {
+        font-size: 1.1rem;
+    }
+    
+    .author-title {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .quote-section {
+        padding: 40px 10px;
+    }
+    
+    .quote-text {
+        font-size: 1.3rem;
+    }
+    
+    .quote-author {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,158 @@
+.about-intro-section {
+    background-color: #f9f7f4;
+    padding: 4rem 2rem 6rem;
+  }
+  
+  /* Container: image + text */
+  .about-intro-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch; /* Ensures both sides match height */
+    justify-content: space-between;
+    gap: 3rem;
+    height: auto;
+  }
+  
+  .intro-text {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Comme', sans-serif;
+    color: #3f3026;
+    justify-content: flex-start;
+  }
+  
+  .intro-text h2 {
+    font-family: 'Neucha', cursive;
+    font-size: 2.5rem;
+    line-height: 1.3;
+    margin-bottom: 1.2rem;
+    margin-top: 0;
+  }
+  
+  .intro-text p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .intro-cta-button {
+    background-color: #4e3b2e;
+    color: white;
+    padding: 0.6rem 1.4rem;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    width: 50%;
+    margin-bottom: 3rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .intro-image {
+    flex: 1 1 40%;
+    min-height: 400px; /* Set minimum height */
+    position: relative; /* Allow absolute positioning of image */
+  }
+  
+  .intro-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 80px;
+  }
+  
+  .about-cards-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .about-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  /* InfoCard reused */
+  .info-card {
+    flex: 1 1 300px;
+    border-radius: 50px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    font-family: 'Comme', sans-serif;
+    color: #3f3026;
+    border: 1px solid #eee;
+  }
+  
+  .info-card h3 {
+    font-family: 'Neucha', cursive;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  .section-title {
+    font-family: 'Neucha', cursive;
+    color: rgb(78, 59, 49);
+    font-weight: normal;
+    font-size: 3.125rem; /* 50px */
+    line-height: 1.3;
+    margin-bottom: 1.2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2.25rem; /* 36px */
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .about-intro-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .intro-text {
+      flex: 1 1 100%;
+    }
+  
+    .intro-image {
+      flex: 1 1 100%;
+      margin-top: 2rem;
+      min-height: 300px; /* Smaller min-height on mobile */
+      position: relative;
+    }
+  
+    .intro-image img {
+      position: static; /* Reset positioning for mobile */
+      width: 100%;
+      height: auto;
+      border-radius: 30px;
+    }
+  
+    .intro-cta-button {
+      display: block;
+      margin: 2rem auto 3rem;
+      width: 70%;
+    }
+  
+    .about-cards {
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+  
+    .info-card {
+      flex: 1 1 100%;
+      padding: 1.5rem;
+    }
+  }

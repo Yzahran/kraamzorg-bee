@@ -1,0 +1,93 @@
+.werken-bij-content-section {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+}
+
+.werken-bij-content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.content-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.section-title {
+  font-family: 'Neucha', cursive;
+  font-size: 3.125rem; /* 50px */
+  color: #4e3b31;
+  font-weight: normal;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.content-text p {
+  font-family: 'Comme', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+}
+
+.content-cta-button {
+  background-color: #6b4e3d;
+  color: #ffffff;
+  font-family: 'Comme', sans-serif;
+  font-weight: bold;
+  padding: 0.75rem 1.8rem;
+  border-radius: 15px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+  text-align: center;
+}
+
+.content-cta-button:hover {
+  background-color: #5a3f2e;
+}
+
+.content-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .werken-bij-content-section {
+    padding: 2rem 1rem;
+  }
+  
+  .werken-bij-content-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.25rem; /* 36px */
+  }
+  
+  .content-text {
+    order: 1;
+  }
+  
+  .content-image {
+    order: 2;
+  }
+} 

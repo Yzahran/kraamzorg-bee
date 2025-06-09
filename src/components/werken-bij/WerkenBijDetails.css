@@ -1,0 +1,80 @@
+.werken-bij-details-section {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+}
+
+.werken-bij-details-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.details-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.details-title {
+  font-family: 'Neucha', cursive;
+  font-size: 2.1875rem; /* 35px */
+  color: #4e3b31;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.detail-item {
+  font-family: 'Comme', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.heart-icon {
+  color: #4e3b31;
+  font-size: 1rem;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.detail-item span:last-child {
+  flex: 1;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .werken-bij-details-section {
+    padding: 2rem 1rem;
+  }
+  
+  .werken-bij-details-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .details-title {
+    font-size: 1rem; /* 16px for mobile */
+    text-align: left;
+  }
+  
+  .detail-item {
+    font-size: 0.8125rem; /* 13px for mobile */
+  }
+  
+  .heart-icon {
+    font-size: 0.8125rem;
+  }
+} 

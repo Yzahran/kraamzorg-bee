@@ -1,0 +1,87 @@
+/* Vergoeding CTA Section */
+.vergoeding-cta-section {
+  position: relative;
+  min-height: 400px;
+  background-size: cover;
+  background-position: 60% 5%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 4rem auto;
+  max-width: min(1200px, 95vw);
+  border-radius: 60px;
+  overflow: hidden;
+}
+
+.vergoeding-cta-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: clamp(2rem, 5vh, 3rem) clamp(1.5rem, 4vw, 3rem);
+}
+
+.vergoeding-cta-content {
+  text-align: left;
+  color: white;
+  max-width: 600px;
+  width: 100%;
+}
+
+.vergoeding-cta-content h2 {
+  font-family: 'Neucha', cursive;
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+.vergoeding-cta-content p {
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.vergoeding-cta-button {
+  background-color: #ffd633;
+  color: #3e2a1d;
+  padding: clamp(0.8rem, 2vw, 1rem) clamp(1.5rem, 4vw, 2rem);
+  border: none;
+  border-radius: clamp(15px, 3vw, 25px);
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+.vergoeding-cta-button:hover {
+  background-color: #f5c400;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .vergoeding-cta-section {
+    margin: 3rem auto;
+    min-height: 320px;
+    border-radius: 45px;
+    background-position: 55% 15%;
+    justify-content: center;
+  }
+  
+  .vergoeding-cta-overlay {
+    padding: 2rem 1.5rem;
+    justify-content: center;
+  }
+  
+  .vergoeding-cta-content {
+    text-align: center;
+  }
+} 

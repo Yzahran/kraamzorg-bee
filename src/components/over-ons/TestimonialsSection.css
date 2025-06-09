@@ -1,0 +1,88 @@
+.testimonials-section {
+    background-color: #fdfcfa;
+    padding: 4rem 2rem;
+  }
+  
+  .testimonials-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: space-between;
+  }
+  
+  .testimonial {
+    flex: 1 1 45%;
+    font-family: 'Comme', sans-serif;
+    color: #3f3026;
+  }
+  
+  /* Naam en subtitel blok */
+  .name-block {
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial h3 {
+    font-size: 2.25rem;
+    font-family: 'Neucha', cursive;
+    font-weight: normal;
+    margin: 0;
+    display: block;
+  }
+  
+  .testimonial .subtitle {
+    font-style: italic;
+    font-family: 'Comme', sans-serif;
+    font-weight: 600;
+    color: #4e3b31;
+    font-size: 1rem;
+    margin-top: 0.4rem;
+    display: block;
+  }
+  
+  .testimonial p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .socials {
+    display: flex;
+    gap: 1.2rem;
+    font-size: 1.2rem;
+  }
+  
+  .socials svg {
+    color: #3f3026;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .socials svg:hover {
+    color: #fbbf24;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .testimonials-container {
+      flex-direction: column;
+    }
+  
+    .testimonial {
+      flex: 1 1 100%;
+    }
+  
+    .socials {
+      justify-content: center;
+    }
+  
+    .testimonial h3 {
+      font-size: 1.8rem;
+    }
+  
+    .testimonial .subtitle {
+      font-size: 0.95rem;
+    }
+  }
+  

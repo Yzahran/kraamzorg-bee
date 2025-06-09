@@ -1,0 +1,75 @@
+.footer {
+    background-color: #eae6dd; /* same as .site-header */
+    padding: 3rem 2rem;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Comme', sans-serif;
+    border-top: 4px solid #4e3b2e; /* optional: mirror the header's bottom border */
+  }
+  
+  
+  .footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+  }
+  
+  .footer-column {
+    flex: 1 1 200px;
+    color: #3e2a1d;
+  }
+  
+  .footer-column h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-column ul li a,
+  .footer-column p a {
+    color: #3e2a1d;
+    text-decoration: none;
+  }
+  
+  .footer-logo {
+    max-width: 140px;
+    margin-bottom: 1rem;
+  }
+  
+  .social-icons a {
+    font-size: 1.4rem;
+    margin-right: 1rem;
+    color: #3e2a1d;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #fbbf24;
+  }
+  
+  /* Decorative bee trail image (optional) */
+  .footer::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    /* background: url('../../assets/images/bee-trail.svg') no-repeat center right; */
+    background-size: contain;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  

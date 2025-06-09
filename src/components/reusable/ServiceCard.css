@@ -1,0 +1,21 @@
+.service-card {
+    background-color: #fff;
+    border: 1px solid #e0dcd3;
+    border-radius: 32px;
+    padding: 24px 28px;
+  }
+  
+  .service-card h3 {
+    font-family: 'Neucha', cursive;
+    font-size: 1.5rem;
+    color: #4d3b34;
+    margin-bottom: 10px;
+  }
+  
+  .service-card p {
+    font-family: 'Comme', sans-serif;
+    font-size: 1rem;
+    color: #222;
+    line-height: 1.5;
+  }
+  
