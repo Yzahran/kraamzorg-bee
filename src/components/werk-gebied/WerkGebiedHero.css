@@ -32,7 +32,7 @@
     align-self: center;
   }
   
-  .werkgebied-hero-content .breadcrumb {
+  .breadcrumb {
     font-size: 0.95rem;
     margin-bottom: 1rem;
     color: #fff;
@@ -48,21 +48,16 @@
     margin: 0 0.5rem;
   }
   
-  .hero-title {
+  .werkgebied-hero-content h1 {
     font-family: 'Neucha', cursive;
-    font-size: 4.375rem;
-    color: #fff;
-    font-weight: normal;
-    margin-bottom: 1rem;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
   }
   
-  .hero-subtitle {
+  .werkgebied-hero-content p {
     font-family: 'Comme', sans-serif;
-    font-weight: 500;
-    color: #ffffff;
-    font-size: 1.25rem;
-    margin-bottom: 1.5rem;
-    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
   }
   
   .yellow-button {
@@ -73,7 +68,6 @@
     border-radius: 15px;
     text-decoration: none;
     display: inline-block;
-    align-self: flex-start;
     transition: background-color 0.3s ease;
   }
   
@@ -87,17 +81,34 @@
     left: 0;
     width: 100%;
   }
+
+  .hero-title {
+    font-family: 'Neucha', cursive;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 4.375rem; /* 70px */
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+  }
   
-  /* Responsive */
+  .hero-subtitle {
+    font-family: 'Comme', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 1.25rem; /* 20px */
+    display: block;
+    margin-top: 0.5rem;
+  }
+  
+  /* Mobile */
   @media (max-width: 768px) {
     .werkgebied-hero-overlay {
       padding: 8vh 4vw;
     }
     
     .hero-title {
-      font-size: 3.125rem;
+      font-size: 3.125rem; /* 50px */
     }
-  
     .hero-subtitle {
       font-size: 1.1rem;
     }

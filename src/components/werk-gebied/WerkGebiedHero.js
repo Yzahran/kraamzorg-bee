@@ -16,8 +16,11 @@ const WerkgebiedHero = () => {
             <span>›</span>
             <span className="current">Werkgebied</span>
           </nav>
-          <h1 className="hero-title">Ons werkgebied          </h1>
-          <p className="hero-subtitle">Altijd persoonlijke kraamzorg bij jou in de buurt</p>
+          <h1 className="hero-title">
+            Ons werkgebied
+            <br />
+            <span className="hero-subtitle">Altijd persoonlijke kraamzorg bij jou in de buurt</span>
+          </h1>
           <Link to="/inschrijven" className="yellow-button">
             Inschrijven
           </Link>

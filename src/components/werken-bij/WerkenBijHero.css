@@ -42,21 +42,10 @@
 .breadcrumb a {
   color: #fbbf24;
   text-decoration: none;
-  font-style: italic;
-}
-
-.breadcrumb a:hover {
-  color: #fff;
 }
 
 .breadcrumb span {
   margin: 0 0.5rem;
-  color: #fbbf24;
-}
-
-.breadcrumb .current {
-  color: #fff;
-  font-style: italic;
 }
 
 .werken-bij-hero-content h1 {
@@ -87,7 +76,7 @@
   background-color: #f59e0b;
 }
 
-.werken-bij-hero-wave {
+.about-hero-wave {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -100,7 +89,7 @@
   font-weight: normal;
   font-size: 4.375rem; /* 70px */
   margin-bottom: 0.5rem;
-  line-height: 1;
+  line-height: 1.2;
 }
 
 .hero-subtitle {

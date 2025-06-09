@@ -26,7 +26,7 @@ const InschrijvenHero = () => {
           </Link>
         </div>
       </div>
-      <svg className="inschrijven-hero-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
+      <svg className="about-hero-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
         <path fill="#ffffff" d="M0,80 C480,160 960,0 1440,80 L1440,160 L0,160 Z"></path>
       </svg>
     </section>
