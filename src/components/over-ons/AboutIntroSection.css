@@ -51,7 +51,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    font-family: 'Comme', sans-serif;
+    box-shadow: 0 4px 15px rgba(78, 59, 46, 0.3);
+  }
+
+  .intro-cta-button:hover {
+    background-color: #3b2d23;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(78, 59, 46, 0.4);
   }
   
   .intro-image {
@@ -99,6 +107,7 @@
     margin-bottom: 1rem;
     font-size: 1.2rem;
   }
+
   .section-title {
     font-family: 'Neucha', cursive;
     color: rgb(78, 59, 49);
@@ -108,27 +117,82 @@
     margin-bottom: 1.2rem;
   }
   
-  @media (max-width: 768px) {
+  /* Tablet Responsive */
+  @media (max-width: 1024px) {
+    .about-intro-section {
+      padding: 3rem 1.5rem 5rem;
+    }
+    
+    .about-intro-container {
+      gap: 2.5rem;
+    }
+    
     .section-title {
-      font-size: 2.25rem; /* 36px */
+      font-size: 2.75rem; /* 44px */
+    }
+    
+    .intro-text h2 {
+      font-size: 2.25rem;
+    }
+    
+    .intro-text p {
+      font-size: 0.95rem;
+    }
+    
+    .intro-cta-button {
+      width: 60%;
+      padding: 0.65rem 1.5rem;
+    }
+    
+    .intro-image {
+      min-height: 350px;
+    }
+    
+    .intro-image img {
+      border-radius: 60px;
+    }
+    
+    .about-cards {
+      gap: 1.75rem;
     }
   }
   
-  /* Responsive */
+  /* Mobile Responsive */
   @media (max-width: 768px) {
+    .about-intro-section {
+      padding: 2.5rem 1rem 4rem;
+    }
+    
+    .section-title {
+      font-size: 2.25rem; /* 36px */
+      text-align: center;
+    }
+    
     .about-intro-container {
       flex-direction: column;
       text-align: center;
+      gap: 2rem;
     }
   
     .intro-text {
       flex: 1 1 100%;
     }
+
+    .intro-text h2 {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .intro-text p {
+      font-size: 0.9rem;
+      text-align: left;
+      max-width: 100%;
+    }
   
     .intro-image {
       flex: 1 1 100%;
-      margin-top: 2rem;
-      min-height: 300px; /* Smaller min-height on mobile */
+      margin-top: 1rem;
+      min-height: 280px; /* Smaller min-height on mobile */
       position: relative;
     }
   
@@ -136,23 +200,106 @@
       position: static; /* Reset positioning for mobile */
       width: 100%;
       height: auto;
-      border-radius: 30px;
+      border-radius: 40px;
     }
   
     .intro-cta-button {
       display: block;
-      margin: 2rem auto 3rem;
+      margin: 2rem auto 2rem;
       width: 70%;
+      padding: 0.7rem 1.5rem;
     }
   
     .about-cards {
       flex-direction: column;
       gap: 1.5rem;
-      margin-top: 3rem;
+      margin-top: 2rem;
     }
   
     .info-card {
       flex: 1 1 100%;
       padding: 1.5rem;
+    }
+  }
+  
+  /* Small Mobile Responsive */
+  @media (max-width: 480px) {
+    .about-intro-section {
+      padding: 2rem 0.75rem 3rem;
+    }
+    
+    .section-title {
+      font-size: 1.9rem; /* 30px */
+    }
+    
+    .intro-text h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+    }
+    
+    .intro-text p {
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+    
+    .intro-cta-button {
+      width: 80%;
+      padding: 0.65rem 1.25rem;
+      font-size: 0.9rem;
+      border-radius: 10px;
+    }
+    
+    .intro-image {
+      min-height: 240px;
+    }
+    
+    .intro-image img {
+      border-radius: 30px;
+    }
+    
+    .about-cards-container {
+      padding: 0 0.75rem;
+    }
+    
+    .about-cards {
+      gap: 1.25rem;
+      margin-top: 1.5rem;
+    }
+    
+    .info-card {
+      padding: 1.25rem;
+    }
+  }
+  
+  /* Very Small Mobile */
+  @media (max-width: 360px) {
+    .about-intro-section {
+      padding: 1.5rem 0.5rem 2.5rem;
+    }
+    
+    .section-title {
+      font-size: 1.6rem; /* 26px */
+    }
+    
+    .intro-text h2 {
+      font-size: 1.5rem;
+    }
+    
+    .intro-text p {
+      font-size: 0.8rem;
+    }
+    
+    .intro-cta-button {
+      width: 85%;
+      padding: 0.6rem 1rem;
+      font-size: 0.85rem;
+    }
+    
+    .intro-image {
+      min-height: 200px;
+    }
+    
+    .intro-image img {
+      border-radius: 25px;
     }
   }

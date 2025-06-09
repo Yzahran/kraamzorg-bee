@@ -3,6 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Header from './components/Header';
+import HeaderFloat from './components/HeaderFloat';
 import WhatsAppFloat from './components/WhatsAppFloat';
 
 import Home from './pages/Home';
@@ -32,6 +33,7 @@ function App() {
       </main>
       
       <Footer />
+      <HeaderFloat />
       <WhatsAppFloat />
     </Router>
   );
