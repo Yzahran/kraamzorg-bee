@@ -2,7 +2,7 @@ import React from 'react';
 import './WhatsAppFloat.css';
 
 const WhatsAppFloat = () => {
-  const phoneNumber = '+31612345678'; // Replace with your actual WhatsApp number
+  const phoneNumber = '31850048342'; // Replace with your actual WhatsApp number
   const message = 'Hallo! Ik heb een vraag over jullie kraamzorg diensten.'; // Default message in Dutch
   
   const handleWhatsAppClick = () => {
