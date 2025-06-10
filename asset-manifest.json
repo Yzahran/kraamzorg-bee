@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kraamzorg-bee/static/css/main.6a920d79.css",
-    "main.js": "/kraamzorg-bee/static/js/main.3eedbe6d.js",
+    "main.css": "/kraamzorg-bee/static/css/main.6d117125.css",
+    "main.js": "/kraamzorg-bee/static/js/main.f191f03a.js",
     "static/js/453.5b358c39.chunk.js": "/kraamzorg-bee/static/js/453.5b358c39.chunk.js",
     "static/media/sleeping-baby.jpg": "/kraamzorg-bee/static/media/sleeping-baby.f66c3a1614ce4ffe1b9e.jpg",
     "static/media/hero-bg.webp": "/kraamzorg-bee/static/media/hero-bg.2d924d908910b7d61894.webp",
@@ -10,12 +10,12 @@
     "static/media/sleeping-baby-2.jpg": "/kraamzorg-bee/static/media/sleeping-baby-2.a3748b324437a4238ee6.jpg",
     "static/media/Logo.webp": "/kraamzorg-bee/static/media/Logo.0c5af810b478b19a1625.webp",
     "index.html": "/kraamzorg-bee/index.html",
-    "main.6a920d79.css.map": "/kraamzorg-bee/static/css/main.6a920d79.css.map",
-    "main.3eedbe6d.js.map": "/kraamzorg-bee/static/js/main.3eedbe6d.js.map",
+    "main.6d117125.css.map": "/kraamzorg-bee/static/css/main.6d117125.css.map",
+    "main.f191f03a.js.map": "/kraamzorg-bee/static/js/main.f191f03a.js.map",
     "453.5b358c39.chunk.js.map": "/kraamzorg-bee/static/js/453.5b358c39.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a920d79.css",
-    "static/js/main.3eedbe6d.js"
+    "static/css/main.6d117125.css",
+    "static/js/main.f191f03a.js"
   ]
 }
